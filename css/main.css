@@ -1,10 +1,16 @@
 /* BASE STYLES */
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #2b2b2b;
 }
-#about, #work, #contact {
-    height: 600px;
+#work {
+    height: 1550px;
+}
+#about {
+    height: 550px;
+}
+#contact {
+    height: 400px;
 }
 
 /* GRID */
@@ -29,130 +35,287 @@ header {
     background-size: cover;
 }
 header h1 { 
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    color: #BBC085;
-    padding: 65px 0 65px 25px;
+    text-transform: lowercase;
+    text-decoration: none;    
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    color: #F8FFFD;
+    padding-top: 650px;
+    margin-left: 20px;
 }
+header h1 span {
+    color: #fcb040;
+}
+header h2 {
+    clear: both;
+    text-transform: lowercase;
+    text-decoration: none;    
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    color: #F8FFFD;
+    padding: 20px 0 20px 25px;
+}
+
 nav {
     float: right; 
-    padding: 75px 25px;
+    padding: 20px 20px;
 }
 nav ul li{
     display: inline-block;
 }
 nav ul li a {
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
-    font-size: 18px;
-    color: #828282;
-    padding-left: 80px; 
-}
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Lora', serif;
-    font-size: 72px;
-    line-height: 80px;
-    color: #9b9b9b;
-    padding: 20px 0 20px 25px;
-}
-header h2 span {
-    color: #2b2b2b;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    color: #F8FFFD;
+    padding-left: 25px; 
 }
 
-
-/* ABOUT SECTION */
-#about .full-width {
-    padding: 80px 0;
-}
-#about h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    padding-left: 50px;
-}
-#about p {
-    font-size: 21px;
-    color: #7F7F7F;
-    line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+#credit {
+    float: right;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #000000;
+    padding: 10px 0px 0px 0px;
 }
 
 
 /* WORK SECTION */
 #work {
-    background-color: #F9CEB7;
+    background-color: #FFFDFA;
     text-align: center;
 }
 #work .full-width {
-    padding: 115px 0;
+    padding: 20px 0;
+}
+#work h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    padding-top: 65px;
+    padding-bottom: 35px;
 }
 #work img {
-    padding-bottom: 30px;
+    height: 250px;
+    width: auto;
 }
-#work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    width: 200px;
-    margin: 0 auto;
-} 
-#work p {
-    font-family: 'Lora', serif;
+
+#work .photo-credit {
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+#first-image {
+    float: left;
+    padding: 0 50px 0 100px;
+    margin-right: 50px;
+}
+#second-image {
+    float: right;
+    padding: 0 100px 0 50px;
+    margin-left: 50px;
+}
+#third-image {
+    float: left;
+    padding: 0 50px 0 100px;
+    margin-right: 50px;
+}
+
+#first-paragraph h3 {
+    clear: right;
+    text-align: left;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: -5px;
+    margin-bottom: -27px;
+}
+#second-paragraph h3 {
+    clear: left;
+    text-align: right;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: -5px;
+    margin-bottom: -27px;
+}
+#third-paragraph h3 {
+    clear: right;
+    text-align: left;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: -5px;
+    margin-bottom: -27px;
+}
+
+#first-paragraph h4 {
+    clear: right;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+#second-paragraph h4 {
+    clear: left;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+#third-paragraph h4 {
+    clear: right;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#first-paragraph p {
+    clear: right;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
+    line-height: 27.5px;
+    height: 300px;
+    margin: 0 50px;
+    margin-left: 400px;
+    padding: 0 50px 0 50px;
+}
+#second-paragraph p {
+    clear: left;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 27.5px;
+    height: 300px;
+    margin: 0 50px;
+    margin-right: 400px;
+    padding: 0 50px 0 50px;
+}
+#third-paragraph p {
+    clear: right;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 27.5px;
+    height: 300px;
+    margin: 0 50px;
+    margin-left: 400px;
+    padding: 0 50px 0 50px;
+}
+
+
+/* ABOUT SECTION */
+#about .full-width {
+    padding: 10px 0;
+}
+
+#about {
+    background: url('../img/contact-background.png');
+    background-size: cover;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+#about-me {
+    width: 700px;
+    float: right;
+
+}
+
+#about h4 {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0px 50px 0 100px;
+}
+
+#about-me p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    line-height: 27.5px;
+    padding: 0 50px 0 100px;
+}
+
+#about .photo-credit {
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 55px;
+    margin-right: -45px;
 }
 
 
 /* CONTACT SECTION */
 #contact {
-    background-color: #EBEBEB;
+    background-color: #FFFDFA;
+    text-align: center;
 }
 #contact .full-width {
-    padding: 110px 0;
+    padding: 5px 0;
 }
-#contact img#contact-img {
-    margin-left: 25px;
-    border: 12px solid #ffffff;
-}
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
-}
+
 #contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    color: #000;
+    margin-top: 25px;
+    padding-bottom: 10px;
 }
-#contact #email-header{
-    font-size: 32px;
-    font-weight: lighter;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
+
+#contact #envelope {
+    padding: 0 10px 0 50px;
 }
-#contact #socialmedia-header {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
+ 
+#email-contact img {
+    height: 50px;
+    width: auto;
+    padding: 0 50px 0 50px;
+    margin-left: 50px;
 }
-#contact a {
+
+#email-contact a {
     text-decoration: none;
-    color: #C49075;
+    color: #000;
     font-weight: bold;
     font-size: 28px;
 }
-#contact ul {
-    list-style: none;
-}
-#contact ul li {
-     display: inline-block;
-}
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
+
+#email-contact a:hover {
+    color: #fcb040;
 }
 
+#social-contact ul {
+    padding-right: 10px;
+}
+
+#social-contact ul {
+    list-style: none;
+}
+
+#social-contact ul li {
+    display: inline-block;
+}
+
+#social-contact li {
+    padding-left: 50px;
+}
