@@ -34,9 +34,9 @@ header {
     background: url('../img/full-background.png');
     background-size: cover;
 }
-header h1 { 
+header h1 {
     text-transform: lowercase;
-    text-decoration: none;    
+    text-decoration: none;
     font-family: 'Archivo Black', sans-serif;
     font-size: 75px;
     color: #F8FFFD;
@@ -49,7 +49,7 @@ header h1 span {
 header h2 {
     clear: both;
     text-transform: lowercase;
-    text-decoration: none;    
+    text-decoration: none;
     font-family: 'Archivo Black', sans-serif;
     font-size: 20px;
     color: #F8FFFD;
@@ -57,7 +57,7 @@ header h2 {
 }
 
 nav {
-    float: right; 
+    float: right;
     padding: 20px 20px;
 }
 nav ul li{
@@ -69,8 +69,31 @@ nav ul li a {
     font-family: 'Archivo Black', sans-serif;
     font-size: 20px;
     color: #F8FFFD;
-    padding-left: 25px; 
+    padding-left: 25px;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding: 5px 0px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.subnav {
+  font-size: 16px;
+}
+.subnav:hover {
+  color: #fcb040;
+}
+
 
 #credit {
     float: right;
@@ -285,7 +308,7 @@ nav ul li a {
 #contact #envelope {
     padding: 0 10px 0 50px;
 }
- 
+
 #email-contact img {
     height: 50px;
     width: auto;
