@@ -1,344 +1,607 @@
-/* BASE STYLES */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #2b2b2b;
-}
-#work {
-    height: 1550px;
-}
-#about {
-    height: 550px;
-}
-#contact {
-    height: 400px;
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
-/* GRID */
-.full-width {
-    width: 1200px;
-    margin: 0 auto;
-}
-.half-width {
-    width: 600px;
-    float: left;
-}
-.third-width {
-    width: 400px;
-    float: left;
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-
-/* HEADER */
-header {
-    height: 800px;
-    background: url('../img/full-background.png');
-    background-size: cover;
-}
-header h1 {
-    text-transform: lowercase;
-    text-decoration: none;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 75px;
-    color: #F8FFFD;
-    padding-top: 650px;
-    margin-left: 20px;
-}
-header h1 span {
-    color: #fcb040;
-}
-header h2 {
-    clear: both;
-    text-transform: lowercase;
-    text-decoration: none;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 20px;
-    color: #F8FFFD;
-    padding: 20px 0 20px 25px;
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-nav {
-    float: right;
-    padding: 20px 20px;
-}
-nav ul li{
-    display: inline-block;
-}
-nav ul li a {
-    text-transform: lowercase;
-    text-decoration: none;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 20px;
-    color: #F8FFFD;
-    padding-left: 25px;
-}
+/*
+ * A better looking default horizontal rule
+ */
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  padding: 5px 0px;
-  z-index: 1;
-}
-.dropdown:hover .dropdown-content {
+hr {
   display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-.subnav {
-  font-size: 16px;
-}
-.subnav:hover {
-  color: #fcb040;
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
 }
 
+/*
+ * Remove default fieldset styles.
+ */
 
-#credit {
-    float: right;
-    text-transform: lowercase;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    color: #000000;
-    padding: 10px 0px 0px 0px;
-}
-
-
-/* WORK SECTION */
-#work {
-    background-color: #FFFDFA;
-    text-align: center;
-}
-#work .full-width {
-    padding: 20px 0;
-}
-#work h2 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 40px;
-    margin-top: 50px;
-    padding-top: 65px;
-    padding-bottom: 35px;
-}
-#work img {
-    height: 250px;
-    width: auto;
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-#work .photo-credit {
-    text-transform: lowercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    color: #000000;
-    margin-top: 5px;
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
 }
 
-#first-image {
-    float: left;
-    padding: 0 50px 0 100px;
-    margin-right: 50px;
-}
-#second-image {
-    float: right;
-    padding: 0 100px 0 50px;
-    margin-left: 50px;
-}
-#third-image {
-    float: left;
-    padding: 0 50px 0 100px;
-    margin-right: 50px;
-}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
-#first-paragraph h3 {
-    clear: right;
-    text-align: left;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: -5px;
-    margin-bottom: -27px;
-}
-#second-paragraph h3 {
-    clear: left;
-    text-align: right;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: -5px;
-    margin-bottom: -27px;
-}
-#third-paragraph h3 {
-    clear: right;
-    text-align: left;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: -5px;
-    margin-bottom: -27px;
-}
+   /* BASE STYLES */
+   body {
+       font-family: 'Roboto', sans-serif;
+       color: #2b2b2b;
+   }
+   #work {
+       height: 1550px;
+   }
+   #about {
+       height: 550px;
+   }
+   #contact {
+       height: 400px;
+   }
 
-#first-paragraph h4 {
-    clear: right;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-}
-#second-paragraph h4 {
-    clear: left;
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-}
-#third-paragraph h4 {
-    clear: right;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-#first-paragraph p {
-    clear: right;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 27.5px;
-    height: 300px;
-    margin: 0 50px;
-    margin-left: 400px;
-    padding: 0 50px 0 50px;
-}
-#second-paragraph p {
-    clear: left;
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 27.5px;
-    height: 300px;
-    margin: 0 50px;
-    margin-right: 400px;
-    padding: 0 50px 0 50px;
-}
-#third-paragraph p {
-    clear: right;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 27.5px;
-    height: 300px;
-    margin: 0 50px;
-    margin-left: 400px;
-    padding: 0 50px 0 50px;
-}
+   /* GRID */
+   .full-width {
+       width: 1200px;
+       margin: 0 auto;
+   }
+   .half-width {
+       width: 600px;
+       float: left;
+   }
+   .third-width {
+       width: 400px;
+       float: left;
+   }
 
 
-/* ABOUT SECTION */
-#about .full-width {
-    padding: 10px 0;
+   /* HEADER */
+   header {
+       height: 800px;
+       background: url('../img/full-background.png');
+       background-size: cover;
+   }
+   header h1 {
+       text-transform: lowercase;
+       text-decoration: none;
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 75px;
+       color: #F8FFFD;
+       padding-top: 650px;
+       margin-left: 20px;
+   }
+   header h1 span {
+       color: #fcb040;
+   }
+   header h2 {
+       clear: both;
+       text-transform: lowercase;
+       text-decoration: none;
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 20px;
+       color: #F8FFFD;
+       padding: 20px 0 20px 25px;
+   }
+
+   nav {
+       float: right;
+       padding: 20px 20px;
+   }
+   nav ul li{
+       display: inline-block;
+   }
+   nav ul li a {
+       text-transform: lowercase;
+       text-decoration: none;
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 20px;
+       color: #F8FFFD;
+       padding-left: 25px;
+   }
+
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     width: 100%;
+     padding: 5px 0px;
+     z-index: 1;
+   }
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+   .subnav {
+     font-size: 16px;
+   }
+   .subnav:hover {
+     color: #fcb040;
+   }
+
+
+   #credit {
+       float: right;
+       text-transform: lowercase;
+       text-decoration: none;
+       font-family: 'Roboto', sans-serif;
+       font-size: 10px;
+       color: #000000;
+       padding: 10px 0px 0px 0px;
+   }
+
+
+   /* WORK SECTION */
+   #work {
+       background-color: #FFFDFA;
+       text-align: center;
+   }
+   #work .full-width {
+       padding: 20px 0;
+   }
+   #work h2 {
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 40px;
+       margin-top: 50px;
+       padding-top: 65px;
+       padding-bottom: 35px;
+   }
+   #work img {
+       height: 250px;
+       width: auto;
+   }
+
+   #work .photo-credit {
+       text-transform: lowercase;
+       font-family: 'Roboto', sans-serif;
+       font-size: 10px;
+       color: #000000;
+       margin-top: 5px;
+   }
+
+   #first-image {
+       float: left;
+       padding: 0 50px 0 100px;
+       margin-right: 50px;
+   }
+   #second-image {
+       float: right;
+       padding: 0 100px 0 50px;
+       margin-left: 50px;
+   }
+   #third-image {
+       float: left;
+       padding: 0 50px 0 100px;
+       margin-right: 50px;
+   }
+
+   #first-paragraph h3 {
+       clear: right;
+       text-align: left;
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 25px;
+       font-weight: 700;
+       margin-top: -5px;
+       margin-bottom: -27px;
+   }
+   #second-paragraph h3 {
+       clear: left;
+       text-align: right;
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 25px;
+       font-weight: 700;
+       margin-top: -5px;
+       margin-bottom: -27px;
+   }
+   #third-paragraph h3 {
+       clear: right;
+       text-align: left;
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 25px;
+       font-weight: 700;
+       margin-top: -5px;
+       margin-bottom: -27px;
+   }
+
+   #first-paragraph h4 {
+       clear: right;
+       text-align: left;
+       font-family: 'Roboto', sans-serif;
+       font-size: 20px;
+       font-weight: 700;
+   }
+   #second-paragraph h4 {
+       clear: left;
+       text-align: right;
+       font-family: 'Roboto', sans-serif;
+       font-size: 20px;
+       font-weight: 700;
+   }
+   #third-paragraph h4 {
+       clear: right;
+       text-align: left;
+       font-family: 'Roboto', sans-serif;
+       font-size: 20px;
+       font-weight: 700;
+   }
+
+   #first-paragraph p {
+       clear: right;
+       text-align: left;
+       font-family: 'Roboto', sans-serif;
+       font-size: 18px;
+       line-height: 27.5px;
+       height: 300px;
+       margin: 0 50px;
+       margin-left: 400px;
+       padding: 0 50px 0 50px;
+   }
+   #second-paragraph p {
+       clear: left;
+       text-align: right;
+       font-family: 'Roboto', sans-serif;
+       font-size: 18px;
+       line-height: 27.5px;
+       height: 300px;
+       margin: 0 50px;
+       margin-right: 400px;
+       padding: 0 50px 0 50px;
+   }
+   #third-paragraph p {
+       clear: right;
+       text-align: left;
+       font-family: 'Roboto', sans-serif;
+       font-size: 18px;
+       line-height: 27.5px;
+       height: 300px;
+       margin: 0 50px;
+       margin-left: 400px;
+       padding: 0 50px 0 50px;
+   }
+
+
+   /* ABOUT SECTION */
+   #about .full-width {
+       padding: 10px 0;
+   }
+
+   #about {
+       background: url('../img/contact-background.png');
+       background-size: cover;
+       text-align: center;
+   }
+
+   #about h2 {
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 40px;
+       color: #fff;
+       margin-top: 50px;
+       padding-bottom: 10px;
+   }
+
+   #about-me {
+       width: 700px;
+       float: right;
+
+   }
+
+   #about h4 {
+       text-align: right;
+       font-family: 'Roboto', sans-serif;
+       font-size: 20px;
+       font-weight: 700;
+       color: #fff;
+       padding: 0px 50px 0 100px;
+   }
+
+   #about-me p {
+       font-family: 'Roboto', sans-serif;
+       font-size: 18px;
+       color: #fff;
+       text-align: right;
+       line-height: 27.5px;
+       padding: 0 50px 0 100px;
+   }
+
+   #about .photo-credit {
+       text-transform: lowercase;
+       font-family: 'Roboto', sans-serif;
+       font-size: 10px;
+       color: #fff;
+       margin-top: 55px;
+       margin-right: -45px;
+   }
+
+
+   /* CONTACT SECTION */
+   #contact {
+       background-color: #FFFDFA;
+       text-align: center;
+   }
+   #contact .full-width {
+       padding: 5px 0;
+   }
+
+   #contact h2 {
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 35px;
+       color: #000;
+       margin-top: 25px;
+       padding-bottom: 10px;
+   }
+
+   #contact #envelope {
+       padding: 0 10px 0 50px;
+   }
+
+   #email-contact img {
+       height: 50px;
+       width: auto;
+       padding: 0 50px 0 50px;
+       margin-left: 50px;
+   }
+
+   #email-contact a {
+       text-decoration: none;
+       color: #000;
+       font-weight: bold;
+       font-size: 28px;
+   }
+
+   #email-contact a:hover {
+       color: #fcb040;
+   }
+
+   #social-contact ul {
+       padding-right: 10px;
+   }
+
+   #social-contact ul {
+       list-style: none;
+   }
+
+   #social-contact ul li {
+       display: inline-block;
+   }
+
+   #social-contact li {
+       padding-left: 50px;
+   }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
 }
 
-#about {
-    background: url('../img/contact-background.png');
-    background-size: cover;
-    text-align: center;
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
 }
 
-#about h2 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 40px;
-    color: #fff;
-    margin-top: 50px;
-    padding-bottom: 10px;
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
 }
 
-#about-me {
-    width: 700px;
-    float: right;
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
 
+.invisible {
+  visibility: hidden;
 }
 
-#about h4 {
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    padding: 0px 50px 0 100px;
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
 }
 
-#about-me p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    text-align: right;
-    line-height: 27.5px;
-    padding: 0 50px 0 100px;
+.clearfix::after {
+  clear: both;
 }
 
-#about .photo-credit {
-    text-transform: lowercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    color: #fff;
-    margin-top: 55px;
-    margin-right: -45px;
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
-
-/* CONTACT SECTION */
-#contact {
-    background-color: #FFFDFA;
-    text-align: center;
-}
-#contact .full-width {
-    padding: 5px 0;
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
-#contact h2 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 35px;
-    color: #000;
-    margin-top: 25px;
-    padding-bottom: 10px;
-}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
 
-#contact #envelope {
-    padding: 0 10px 0 50px;
-}
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-#email-contact img {
-    height: 50px;
-    width: auto;
-    padding: 0 50px 0 50px;
-    margin-left: 50px;
-}
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-#email-contact a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 28px;
-}
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
 
-#email-contact a:hover {
-    color: #fcb040;
-}
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
 
-#social-contact ul {
-    padding-right: 10px;
-}
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
 
-#social-contact ul {
-    list-style: none;
-}
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-#social-contact ul li {
-    display: inline-block;
-}
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-#social-contact li {
-    padding-left: 50px;
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
